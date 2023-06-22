@@ -1,0 +1,16 @@
+extend base
+
+block content
+  .wrapper
+    form(action=`http://localhost:8000/api/auth/login` method='POST')
+      .task-input
+        input#title(type='email' placeholder='Enter email' name='email'  required='')
+      .task-input
+        input#description(type='password' placeholder='Enter password' name='password' required='')
+      p.text-orange-500.m-6= `${message || ''}`
+      .controls
+        p Không có tài khoản?
+          a(href='http://localhost:8000/register')
+            strong|  Đăng ký
+        button.add-btn Login
+

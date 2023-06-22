@@ -1,0 +1,3 @@
+- npm start để chạy
+- vào http://localhost:8000/c1 xử lý dùng https
+- vào http://localhost:8000/c2 xử lý dùng fetch

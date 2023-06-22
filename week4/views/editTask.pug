@@ -1,0 +1,12 @@
+extend base
+
+block content
+  .wrapper
+    form(action=`http://localhost:8000/api/tasks/${task.id}` method='POST')
+      .task-input
+        input#title(type='text' placeholder='Title...' name='title' value=`${task.title}` required='')
+      .task-input
+        input#description(type='text' placeholder='Description...' name='desc' value=`${task.desc}` required='')
+      .controls
+        .filters
+        button.add-btn Edit task
